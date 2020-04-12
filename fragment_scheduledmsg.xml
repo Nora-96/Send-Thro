@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_scheduledmsg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:text="Scheduled Messages"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/sms"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:clickable="true"
+        android:onClick="SMS_Msg">
+
+            <TextView
+                android:id="@+id/sms_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text=">  SMS Scheduler"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:clickable="true"
+        android:onClick="emai_Msg">
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=">  Email Scheduler"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="224dp">
+
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/whatsapp_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=">  WhatsApp Scheduler"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="638dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#F73B4564"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_plus2" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/wtslayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="655dp"
+        android:layout_marginEnd="284dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/wtsfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/whatsapp2"
+            tools:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/smslayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="602dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/smsfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/sms2"
+            tools:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/emaillayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="588dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/emailfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_email"
+            tools:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
